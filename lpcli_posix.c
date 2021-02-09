@@ -35,6 +35,7 @@ void *lpcli_zeromemory(void *dst, size_t dstlen)
 #endif
 
 #define PASTE_WAIT 10
+#define USE_XCLIP
 
 int lpcli_clipboardcopy(const char *text)
 {

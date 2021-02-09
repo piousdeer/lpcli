@@ -44,6 +44,7 @@ int lpcli_clipboardcopy(const char *text)
 	if (!pout)
 		return LPCLI_FAIL;
 	fprintf(pout, "%s", text);
+	printf("Password copied to clipboard\n");
 	fflush(pout);
 	pclose(pout);
 #else

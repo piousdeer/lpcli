@@ -311,7 +311,7 @@ int lpcli_main(int argc, char **argv)
 	print_options(&ctx);
 	
 	char passwd_in[LPMAXSTRLEN];
-	if (lpcli_readpassword("Enter Password: ", passwd_in, sizeof passwd_in) != LPCLI_OK)
+	if (lpcli_readpassword("Master password: ", passwd_in, sizeof passwd_in) != LPCLI_OK)
 	{
 		return print_error(errstr[ERR_PASSWORD]);
 	}
